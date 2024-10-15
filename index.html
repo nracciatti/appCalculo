@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Divisor de Gastos</h1>
+        <form id="expenseForm">
+            <div id="personInputs">
+                <input type="text" id="personName" placeholder="Nombre de la persona" aria-label="Nombre de la persona" required>
+                <input type="number" id="personAmount" placeholder="Cantidad gastada" aria-label="Cantidad gastada" step="0.01" min="0" required>
+                <button type="submit">Agregar Persona</button>
+            </div>
+        </form>
+        <ul id="peopleList" aria-live="polite"></ul>
+        <button id="calculateButton" onclick="calculateSplit()">Calcular División</button>
+        <div id="results" aria-live="polite"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
